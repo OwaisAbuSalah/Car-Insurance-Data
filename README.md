@@ -71,3 +71,41 @@ Most policyholders did **not** file a claim, indicating class imbalance.
 ## ✅ Conclusion
 The analysis highlights clear patterns between driver experience, ownership status, and claim likelihood. These insights support smarter policy pricing and risk mitigation strategies.
 
+
+# 🔧 Project 4 - Part 2: Feature Engineering and Final Model
+
+## 🛠 Feature Engineering Applied:
+- PCA: 3 principal components
+- KMeans clustering: 3 clusters
+- Concatenated with original features
+
+## ✅ Model Performance Comparison
+
+| Model               | Precision (1) | Recall (1) | F1-score (1) |
+|--------------------|---------------|------------|--------------|
+| Baseline           | 0.48          | 0.39       | 0.43         |
+| With Engineering   | 0.54          | 0.44       | 0.49         |
+| After Selection    | 0.53          | 0.45       | 0.49         |
+
+## ⭐ Top 10 Features by Permutation Importance
+
+| Feature_Index | Importance |
+|---------------|------------|
+| 14            | 0.01112    |
+| 10            | 0.01048    |
+| 1             | 0.00936    |
+| 13            | 0.00800    |
+| 7             | 0.00720    |
+| 6             | 0.00688    |
+| 3             | 0.00656    |
+| 0             | 0.00576    |
+| 11            | 0.00536    |
+| 5             | 0.00512    |
+
+## 📌 Observations
+
+- The enhanced model shows better performance compared to the baseline.
+- PCA and clustering introduced useful structure to the data.
+- Feature selection helped reduce noise and focused the model on important attributes.
+- Some engineered features (PCA components or cluster labels) appear in the top 10, showing their added value.
+
